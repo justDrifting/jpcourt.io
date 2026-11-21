@@ -1,14 +1,14 @@
 <!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Harris County | Justice Courts</title>
 <style>
-:root{--ink:#202522;--muted:#565d58;--paper:#faf8f2;--line:#d8d7ce;--green:#21614e;--rust:#ae634a}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px system-ui,sans-serif}main,.mast>div{max-width:1370px;margin:auto;padding:0 40px}.mast{border-top:5px solid var(--green);border-bottom:1px solid var(--line)}.mast>div{display:flex;justify-content:space-between;align-items:center;min-height:58px;gap:16px}.brand{font: bold 18px Georgia}.source,.muted,small{color:var(--muted)}h1,h2,.value{font-family:Georgia,serif}h1{font-size:clamp(32px,4.6vw,58px);font-weight:500;letter-spacing:-.055em;line-height:1.05;margin:32px 0 10px}h2{font-size:24px;font-weight:500;margin:0 0 6px}p{margin:0 0 14px}.intro{max-width:780px;line-height:1.5}.tabs{display:flex;gap:25px;border-bottom:1px solid var(--line);margin-top:25px}.tabs button{padding:12px 1px;border:0;border-bottom:3px solid transparent;background:none;font:inherit;cursor:pointer}.tabs button[aria-selected=true]{border-color:var(--green);font-weight:700;color:var(--green)}.filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}.filters label{display:grid;gap:6px;font-size:13px;font-weight:650}select{width:100%;font:inherit;color:var(--ink);background:#fffdf8;border:1px solid #bcbfb5;border-radius:3px;padding:10px}.status{font-size:13px;color:var(--muted);margin:0 0 15px}.status.warn{background:#f5e8d8;padding:10px 12px;color:#6a4429}.kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-block:1px solid var(--line);padding:17px 0}.kpi{padding:3px 14px 5px;border-right:1px solid var(--line)}.kpi:first-child{padding-left:0}.kpi:last-child{border:0}.metric{font:700 16px Georgia;min-height:38px}.value{font-size:clamp(22px,2.8vw,38px);letter-spacing:-.04em;margin:4px 0 7px}.peer{color:var(--green);font-weight:700;font-size:13px}.sub{font-size:12px;color:var(--muted);margin-top:4px}.nav{display:flex;gap:20px;margin:19px 0 26px;flex-wrap:wrap}.nav a{color:var(--green);font-size:13px}.grid{display:grid;grid-template-columns:1.75fr 1fr;gap:30px}.panel{border-top:2px solid var(--ink);padding-top:15px;margin-bottom:30px;min-width:0}.panel p{font-size:13px}.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;margin:10px 0}.dot{display:inline-block;width:10px;height:10px;margin-right:6px;background:var(--rust)}.dot.alt,.bar.alt{background:var(--green)}canvas{display:block;width:100%;height:230px}.mixrow{margin:14px 0}.mixname{font-size:13px;font-weight:650;margin-bottom:5px}.mixname button{border:0;background:none;padding:0;color:var(--green);text-decoration:underline;font:inherit;cursor:pointer;text-align:left}.track{display:flex;align-items:center;gap:8px;height:17px;font-size:11.5px}.track>span:last-child{white-space:nowrap}.bar{height:7px;background:var(--rust);max-width:72%}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}tr>*:first-child{text-align:left;padding-left:0}details{margin:12px 0 38px;color:var(--muted);line-height:1.55}summary{cursor:pointer;color:var(--green);font-weight:700}.empty{padding:20px 0 45px}.empty li{margin:7px 0}footer{border-top:1px solid var(--line);padding:17px 0 32px;color:var(--muted);font-size:12px}[hidden]{display:none!important}:focus-visible{outline:2px solid var(--green);outline-offset:3px}@media(max-width:900px){main,.mast>div{padding-inline:24px}.kpis{grid-template-columns:repeat(3,1fr);row-gap:15px}.kpi:nth-child(3){border:0}.kpi:nth-child(4){padding-left:0}.grid{grid-template-columns:1fr}}@media(max-width:520px){main,.mast>div{padding-inline:14px}.source{display:none}.filters{grid-template-columns:1fr 1fr}.kpis{grid-template-columns:repeat(2,1fr)}.kpi{border-right:0;padding-left:0}}
-.mast .source{margin-left:auto}.trend-tabs{display:flex;flex-wrap:wrap;gap:4px 12px;border-bottom:1px solid var(--line);margin-bottom:10px}.trend-tabs button{font:inherit;font-size:13px;background:none;color:var(--muted);border:0;border-bottom:2px solid transparent;padding:8px 2px;cursor:pointer}.trend-tabs button[aria-pressed=true]{border-color:var(--green);color:var(--green);font-weight:700}.average-line{display:inline-block;width:20px;margin-right:6px;border-top:1px dashed #757b77;vertical-align:middle}.kpi{display:flex;flex-direction:column}.kpi-meta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:5px 8px}.kpi-meta .sub{margin-top:0}.court-pill{display:inline-block;margin-left:auto;border-radius:999px;padding:4px 9px;background:#9b523c;color:white;font-size:12px;font-weight:700;white-space:nowrap}.kpi-comparison{margin-top:auto;padding-top:8px;text-align:right}.kpi-comparison .peer{margin-top:3px}.peer-value{color:var(--muted)}</style>
+:root{--ink:#202522;--muted:#565d58;--paper:#faf8f2;--line:#d8d7ce;--green:#21614e;--rust:#ae634a}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px system-ui,sans-serif}main,.mast>div{max-width:1370px;margin:auto;padding:0 40px}.mast{border-top:5px solid var(--green);border-bottom:1px solid var(--line)}.mast>div{display:flex;justify-content:space-between;align-items:center;min-height:58px;gap:16px}.brand{font: bold 18px Georgia}.source,.muted,small{color:var(--muted)}h1,h2,.value{font-family:Georgia,serif}h1{font-size:clamp(32px,4.6vw,58px);font-weight:500;letter-spacing:-.055em;line-height:1.05;margin:32px 0 10px}h2{font-size:24px;font-weight:500;margin:0 0 6px}p{margin:0 0 14px}.intro{max-width:780px;line-height:1.5}.tabs{display:flex;gap:25px;border-bottom:1px solid var(--line);margin-top:25px}.tabs button{padding:12px 1px;border:0;border-bottom:3px solid transparent;background:none;font:inherit;cursor:pointer}.tabs button[aria-selected=true]{border-color:var(--green);font-weight:700;color:var(--green)}.filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}.filters label{display:grid;gap:6px;font-size:13px;font-weight:650}select{width:100%;font:inherit;color:var(--ink);background:#fffdf8;border:1px solid #bcbfb5;border-radius:3px;padding:10px}.status{font-size:13px;color:var(--muted);margin:0 0 15px}.status.warn{background:#f5e8d8;padding:10px 12px;color:#6a4429}.kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-block:1px solid var(--line);padding:17px 0}.kpi{padding:2px 18px 4px;border-right:1px solid var(--line)}.kpi:last-child{padding-right:0}.kpi:first-child{padding-left:0}.kpi:last-child{border:0}.metric{font:700 15px/1.25 Georgia}.value{font-size:clamp(24px,2.6vw,34px);letter-spacing:-.03em;line-height:1.1;margin:2px 0 0}.sub{font-size:12px;color:var(--muted);margin-top:4px}.nav{display:flex;gap:20px;margin:19px 0 26px;flex-wrap:wrap}.nav a{color:var(--green);font-size:13px}.grid{display:grid;grid-template-columns:1.75fr 1fr;gap:30px}.panel{border-top:2px solid var(--ink);padding-top:15px;margin-bottom:30px;min-width:0}.panel p{font-size:13px}.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;margin:10px 0}.dot{display:inline-block;width:10px;height:10px;margin-right:6px;background:var(--rust)}.dot.alt,.bar.alt{background:var(--green)}canvas{display:block;width:100%;height:230px}.mixrow{margin:14px 0}.mixname{font-size:13px;font-weight:650;margin-bottom:5px}.mixname button{border:0;background:none;padding:0;color:var(--green);text-decoration:underline;font:inherit;cursor:pointer;text-align:left}.track{display:flex;align-items:center;gap:8px;height:17px;font-size:11.5px}.track>span:last-child{white-space:nowrap}.bar{height:7px;background:var(--rust);max-width:72%}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}tr>*:first-child{text-align:left;padding-left:0}details{margin:12px 0 38px;color:var(--muted);line-height:1.55}summary{cursor:pointer;color:var(--green);font-weight:700}.empty{padding:20px 0 45px}.empty li{margin:7px 0}footer{border-top:1px solid var(--line);padding:17px 0 32px;color:var(--muted);font-size:12px}[hidden]{display:none!important}:focus-visible{outline:2px solid var(--green);outline-offset:3px}@media(max-width:900px){main,.mast>div{padding-inline:24px}.kpis{grid-template-columns:repeat(3,1fr);row-gap:15px}.kpi:nth-child(3){border:0;padding-right:0}.kpi:nth-child(4){padding-left:0}.grid{grid-template-columns:1fr}}@media(max-width:520px){main,.mast>div{padding-inline:14px}.source{display:none}.filters{grid-template-columns:1fr 1fr}.kpis{grid-template-columns:repeat(2,1fr);column-gap:20px}.kpi{border-right:0;padding-left:0;padding-right:0}}
+.mast .source{margin-left:auto}.trend-controls{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;border-bottom:1px solid var(--line);margin-bottom:10px}.trend-tabs{display:flex;flex-wrap:wrap;gap:4px 12px}.period{display:inline-flex;border:1px solid #bcbfb5;border-radius:4px;overflow:hidden;margin-bottom:4px}.period button{font:inherit;font-size:12px;background:#fffdf8;color:var(--muted);border:0;border-left:1px solid #bcbfb5;padding:5px 10px;cursor:pointer}.period button:first-child{border-left:0}.period button[aria-pressed=true]{background:var(--green);color:#fff;font-weight:700}.trend-tabs button{font:inherit;font-size:13px;background:none;color:var(--muted);border:0;border-bottom:2px solid transparent;padding:8px 2px;cursor:pointer}.trend-tabs button[aria-pressed=true]{border-color:var(--green);color:var(--green);font-weight:700}.average-line{display:inline-block;width:20px;margin-right:6px;border-top:1px dashed #757b77;vertical-align:middle}.kpi{display:flex;flex-direction:column}.kpi-main{margin-top:auto;padding-top:14px;text-align:right}.kpi-court{color:#9b523c;font-size:12px;font-weight:700;line-height:1.3}.kpi-court.alt{color:var(--green)}.kpi-comparison{margin-top:10px;padding-top:8px;border-top:1px dotted #c9c8be;text-align:right}.peer-value{font:18px Georgia,serif;color:var(--muted);margin-top:1px}</style>
 <header class="mast"><div><span class="brand">Harris County · Justice Courts</span><span class="source">Texas Office of Court Administration</span></div></header>
 <main><h1>Justice Court Caseload Comparison</h1><p class="muted intro">Compare Harris County’s 16 Justice of the Peace courts side by side. Choose a <strong>primary court</strong> and a <strong>comparison court</strong> to see how their monthly workload, case mix and outcomes differ, or keep <strong>All courts</strong> to see countywide totals. The <strong>Civil</strong> and <strong>Criminal</strong> tabs compare the same courts for each division.</p>
 <div class="tabs" aria-label="Case division"><button id="civilTab" aria-selected="true">Civil</button><button id="criminalTab" aria-selected="false">Criminal</button></div>
 <div id="civil"><div class="filters"><label>Primary court<select id="primary"></select></label><label>Comparison court<select id="peer"></select></label><label>Reporting month<select id="month"></select></label><label>Case type<select id="type"></select></label></div>
 <p class="status" id="status" aria-live="polite"></p><div class="kpis" id="kpis"></div>
-<nav class="nav" aria-label="Dashboard sections"><a href="#trends">Monthly trends</a><a href="#mixPanel">Case mix</a><a href="#outcomes">Disposition detail</a><a href="#definitions">Metric definitions</a></nav>
-<div class="grid"><section class="panel" id="trends"><h2>Monthly trends</h2><p class="muted">Up to 12 months through the selected reporting month. The countywide average includes courts that handled the selected case type that month.</p><div class="trend-tabs" id="measure" role="group" aria-label="Trend measure"><button data-measure="5" aria-pressed="true">New filings</button><button data-measure="15" aria-pressed="false">Total dispositions</button><button data-measure="17" aria-pressed="false">Active pending</button><button data-measure="rate" aria-pressed="false">Clearance rate</button></div><div id="legend" class="legend"></div><canvas id="chart" role="img" aria-label="Monthly comparison trend"></canvas><details><summary>View monthly values</summary><div class="tablewrap" id="trendTable"></div></details></section>
+<nav class="nav" aria-label="Dashboard sections"><a href="#trends">Trends</a><a href="#mixPanel">Case mix</a><a href="#outcomes">Disposition detail</a><a href="#definitions">Metric definitions</a></nav>
+<div class="grid"><section class="panel" id="trends"><h2 id="trendTitle">Monthly trends</h2><p class="muted" id="trendNote"></p><div class="trend-controls"><div class="trend-tabs" id="measure" role="group" aria-label="Trend measure"><button data-measure="5" aria-pressed="true">New filings</button><button data-measure="15" aria-pressed="false">Total dispositions</button><button data-measure="17" aria-pressed="false">Active pending</button><button data-measure="rate" aria-pressed="false">Clearance rate</button></div><div class="period" id="period" role="group" aria-label="Trend period"><button data-period="month" aria-pressed="true">Monthly</button><button data-period="quarter" aria-pressed="false">Quarterly</button><button data-period="year" aria-pressed="false">Yearly</button></div></div><div id="legend" class="legend"></div><canvas id="chart" role="img" aria-label="Monthly comparison trend"></canvas><details><summary id="trendSummary">View monthly values</summary><div class="tablewrap" id="trendTable"></div></details></section>
 <section class="panel" id="mixPanel"><h2>Case mix</h2><p class="muted">New filings by case type. Select a case type to drill down.</p><div id="mix"></div></section></div>
 <section class="panel" id="outcomes"><h2>Disposition detail</h2><p class="muted">Reported outcomes, appeals and pending inventory for the selected month and case type.</p><div class="tablewrap" id="outcomeTable"></div></section>
 <details id="definitions"><summary>Metric definitions and reporting coverage</summary><p>Active and inactive pending are month-end snapshots. Clearance rate is total dispositions divided by new filings and can exceed 100%. It is undefined when filings are zero. With All courts selected, counts are summed and clearance rate uses total dispositions divided by total filings. The countywide average is the simple average of court values for the selected case type and month, including the courts selected for comparison. A court counts if it reported any positive case count or activity for the selected case type that month. This includes cases already pending. Missing case-type records are excluded. For clearance rate, each court with at least one new filing counts equally. Appeals combine appeals after trial and without trial. Disposition categories and totals are displayed as reported.</p><p>The combined extract covers September 2011 through September 2026. Division-wide metrics use the reported All cases rows. Civil case-type labels differ across reporting periods. A case type absent from a month is shown as unavailable.</p></details></div>
@@ -128,12 +128,55 @@ function primaryStats(court, month, type) {
   });
 }
 const rate = s => s?.[5] && s[15]!=null ? s[15]/s[5] : null;
-const metric = (s,i) => i === 'rate' ? rate(s) : s?.[i] ?? null;
-function countyAverage(month, type, measure) {
+let period = 'month';
+const monthKey = (year, month) => year + '-' + String(month).padStart(2, '0');
+const shortMonth = month => formatMonth(month).replace(' 20', ' ’');
+// Fiscal year runs Oct 1 – Sep 30 and is named for the year it ends (FY2026 = Oct 2025 – Sep 2026).
+function fiscalMonths(fy, quarter) {
+  const start = quarter ? (quarter - 1) * 3 : 0, count = quarter ? 3 : 12;
+  return Array.from({length: count}, (_, i) => {
+    const offset = start + i;             // 0 = October of the prior calendar year
+    const month = (offset + 9) % 12 + 1;
+    return monthKey(month >= 10 ? fy - 1 : fy, month);
+  });
+}
+function trendPeriods(selectedMonth) {
+  if (period === 'month') {
+    const idx = months.indexOf(selectedMonth);
+    return months.slice(Math.max(0, idx - 11), idx + 1).map(month => ({label: shortMonth(month), long: formatMonth(month), months: [month]}));
+  }
+  const [year, month] = selectedMonth.split('-').map(Number);
+  const fy = month >= 10 ? year + 1 : year;
+  const quarter = month >= 10 ? 1 : Math.floor((month - 1) / 3) + 2;
+  const quarterEnds = month % 3 === 0;    // Dec, Mar, Jun, Sep close a fiscal quarter
+  let list = [];
+  if (period === 'quarter') {
+    let q = quarterEnds ? quarter : quarter - 1, y = fy;
+    if (q === 0) { q = 4; y -= 1; }
+    for (let i = 0; i < 12; i++) {
+      list.unshift({label: 'FY' + String(y).slice(2) + ' Q' + q, long: 'FY' + y + ' Q' + q, months: fiscalMonths(y, q)});
+      if (--q === 0) { q = 4; y -= 1; }
+    }
+  } else {
+    const lastYear = month === 9 ? fy : fy - 1;
+    for (let y = lastYear; y > lastYear - 12; y--) list.unshift({label: 'FY' + y, long: 'FY' + y + ' (Oct ' + (y - 1) + ' – Sep ' + y + ')', months: fiscalMonths(y)});
+  }
+  return list.filter(p => p.months[0] >= months[0]);   // keep only periods fully inside the data range
+}
+// Flows (filings, dispositions) are summed; active pending is the value at period end; clearance rate is summed dispositions ÷ summed filings.
+// A period with any month missing for that court shows no value rather than a partial total.
+function periodMetric(get, p, measure) {
+  if (measure === '17') return get(p.months.at(-1))?.[17] ?? null;
+  const reports = p.months.map(get);
+  const total = i => reports.every(r => Number.isFinite(r?.[i])) ? reports.reduce((sum, r) => sum + r[i], 0) : null;
+  if (measure !== 'rate') return total(Number(measure));
+  const filed = total(5), disposed = total(15);
+  return filed && disposed != null ? disposed / filed : null;
+}
+function countyAverage(p, type, measure) {
   const values = courts
-    .map(court=>stats(court,month,type))
-    .filter(report=>report?.slice(3).some(count=>count>0))
-    .map(report=>metric(report,measure))
+    .filter(court=>p.months.some(month=>stats(court,month,type)?.slice(3).some(count=>count>0)))
+    .map(court=>periodMetric(month=>stats(court,month,type),p,measure))
     .filter(value=>value!=null);
   return values.length ? values.reduce((sum,value)=>sum+value,0)/values.length : null;
 }
@@ -164,7 +207,7 @@ function draw() {
   const raw = Math.max(1,...values);
   const step = isRate ? Math.max(.25,Math.ceil(raw/.25/4)*.25) : Math.max(1,Math.ceil(raw/4/Math.pow(10,Math.floor(Math.log10(raw/4))))*Math.pow(10,Math.floor(Math.log10(raw/4))));
   ctx.font='11px system-ui';
-  const lastLabel = timeline.length ? formatMonth(timeline.at(-1)).replace(' 20',' ’') : '';
+  const lastLabel = timeline.at(-1) ?? '';
   const left=56, right=width-Math.max(17,Math.ceil(ctx.measureText(lastLabel).width/2)+8), top=12, bottom=height-30;
   const x=i=>left+(right-left)*i/Math.max(1,timeline.length-1);
   const y=v=>bottom-(bottom-top)*v/(step*4);
@@ -176,7 +219,7 @@ function draw() {
   timeline.forEach((m,i)=>{
     const stride=width<490?3:2;
     if(i%stride!==0 && i!==timeline.length-1 || i===timeline.length-2 && i%stride===0) return;
-    ctx.fillStyle='#565d58';ctx.textAlign='center';ctx.fillText(formatMonth(m).replace(' 20',' ’'),x(i),height-7);
+    ctx.fillStyle='#565d58';ctx.textAlign='center';ctx.fillText(m,x(i),height-7);
   });
   for (const j of [2,0,1]) {
     const line=series[j], isAverage=j===2;
@@ -214,22 +257,33 @@ function render() {
     ['Inactive Cases Pending',first?.[18],second?.[18],'At month end'],
     ['Cases Appealed',appeals(first),appeals(second),'With or without trial']
   ];
-  $('kpis').innerHTML=cards.map(([title,v,p,n,r])=>'<div class="kpi"><div class="metric">'+title+'</div><div class="kpi-meta"><div class="sub">'+n+'</div><span class="court-pill">'+esc(labelCourt(a))+'</span></div><div class="value">'+show(v,r)+'</div>'+(b?'<div class="kpi-comparison"><div class="sub">Compared to</div><div class="peer">'+esc(labelCourt(b))+' <span class="peer-value">· '+show(p,r)+'</span></div></div>':'')+'</div>').join('');
+  $('kpis').innerHTML=cards.map(([title,v,p,n,r])=>'<div class="kpi"><div class="metric">'+title+'</div><div class="sub">'+n+'</div>'
+    +'<div class="kpi-main"><div class="kpi-court">'+esc(labelCourt(a))+'</div><div class="value">'+show(v,r)+'</div></div>'
+    +(b?'<div class="kpi-comparison"><div class="kpi-court alt">'+esc(labelCourt(b))+'</div><div class="peer-value">'+show(p,r)+'</div></div>':'')+'</div>').join('');
   $('legend').innerHTML='<span><i class="dot"></i>'+esc(labelCourt(a))+'</span>'
     +(b?'<span><i class="dot alt"></i>'+esc(labelCourt(b))+'</span>':'')
     +(showAverage?'<span><i class="average-line"></i>Countywide average</span>':'');
-  const idx=months.indexOf(m),timeline=months.slice(Math.max(0,idx-11),idx+1);
+  const periods=trendPeriods(m);
   const series=[
-    timeline.map(month=>metric(primaryStats(a,month,t),measure)),
-    b?timeline.map(month=>metric(stats(b,month,t),measure)):null,
-    showAverage?timeline.map(month=>countyAverage(month,t,measure)):null
+    periods.map(p=>periodMetric(month=>primaryStats(a,month,t),p,measure)),
+    b?periods.map(p=>periodMetric(month=>stats(b,month,t),p,measure)):null,
+    showAverage?periods.map(p=>countyAverage(p,t,measure)):null
   ];
+  const unit={month:'month',quarter:'fiscal quarter',year:'fiscal year'}[period];
+  $('trendTitle').textContent={month:'Monthly',quarter:'Quarterly',year:'Yearly'}[period]+' trends';
+  $('trendSummary').textContent='View '+{month:'monthly',quarter:'quarterly',year:'yearly'}[period]+' values';
+  $('trendNote').textContent=(period==='month'
+      ? 'Up to 12 months through the selected reporting month.'
+      : 'Up to 12 '+unit+'s through the last one completed by '+formatMonth(m)+' (fiscal year Oct 1 – Sep 30). Filings and dispositions are period totals; active pending is the count at period end. Periods missing a month are left blank.')
+    +(showAverage?' The countywide average includes courts that handled the selected case type.':'');
+  $('chart').setAttribute('aria-label',{month:'Monthly',quarter:'Quarterly',year:'Yearly'}[period]+' comparison trend');
+  const timeline=periods.map(p=>p.label);
   chartState={timeline,series,isRate:measure==='rate'};
   draw();
-  $('trendTable').innerHTML=table(['Reporting month',labelCourt(a),...(b?[labelCourt(b)]:[]),...(showAverage?['Countywide average']:[])],timeline.map((month,i)=>{
+  $('trendTable').innerHTML=table([{month:'Reporting month',quarter:'Fiscal quarter',year:'Fiscal year'}[period],labelCourt(a),...(b?[labelCourt(b)]:[]),...(showAverage?['Countywide average']:[])],periods.map((p,i)=>{
     const average=series[2]?.[i];
     const formattedAverage=average==null || measure==='rate' ? show(average,measure==='rate') : average.toLocaleString('en-US',{maximumFractionDigits:1});
-    return [formatMonth(month),show(series[0][i],measure==='rate'),...(b?[show(series[1][i],measure==='rate')]:[]),...(showAverage?[formattedAverage]:[])];
+    return [p.long,show(series[0][i],measure==='rate'),...(b?[show(series[1][i],measure==='rate')]:[]),...(showAverage?[formattedAverage]:[])];
   }));
   const groups=types.map(type=>[type,primaryStats(a,m,type)?.[5],b?stats(b,m,type)?.[5]:null]).filter(([,first,second])=>first!=null || second!=null);
   const max=Math.max(1,...groups.flatMap(g=>g.slice(1)).filter(Number.isFinite));
@@ -267,6 +321,14 @@ for (const button of trendButtons) {
   button.onclick=()=>{
     measure=button.dataset.measure;
     for (const item of trendButtons) item.setAttribute('aria-pressed',String(item===button));
+    render();
+  };
+}
+const periodButtons = [...$('period').querySelectorAll('button')];
+for (const button of periodButtons) {
+  button.onclick=()=>{
+    period=button.dataset.period;
+    for (const item of periodButtons) item.setAttribute('aria-pressed',String(item===button));
     render();
   };
 }
