@@ -218,7 +218,8 @@ function draw() {
   }
   timeline.forEach((m,i)=>{
     const stride=width<490?3:2;
-    if(i%stride!==0 && i!==timeline.length-1 || i===timeline.length-2 && i%stride===0) return;
+    // Label the second tick and every other one after it (every third on narrow screens); a single point is always labelled.
+    if(timeline.length>1 && i%stride!==1) return;
     ctx.fillStyle='#565d58';ctx.textAlign='center';ctx.fillText(m,x(i),height-7);
   });
   for (const j of [2,0,1]) {
