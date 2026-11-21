@@ -290,7 +290,7 @@ function renderTiles(a, b, first, second, split) {
     const civil=get(split.civil), crim=get(split.criminal), total=(civil??0)+(crim??0);
     // Clearance rate is a ratio, so each division shows its own rate rather than a share of the total.
     const side=(label,v)=>'<div><div class="kpi-court">'+label+'</div><div class="peer-value">'+show(v,r)+'</div>'
-      +(r?'':'<div class="split-pct">'+(v==null||!total?'':'('+share(v,total)+')')+'</div>')+'</div>';
+      +'<div class="split-pct">'+(r||v==null||!total?'&nbsp;':share(v,total))+'</div></div>';   // empty row on the rate tile keeps every tile's divider and number aligned
     return '<div class="kpi-comparison kpi-split">'+side('Civil',civil)+side('Criminal',crim)+'</div>';
   };
   $('kpis').innerHTML=cards.map(([title,get,n,r])=>'<div class="kpi"><div class="metric">'+title+'</div><div class="sub">'+n+'</div>'
