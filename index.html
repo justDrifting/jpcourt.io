@@ -346,26 +346,26 @@ function nodeValue(node, s) {
 const groupIds = node => node.children ? [node.id, ...node.children.flatMap(groupIds)] : [];
 const share = (value, total) => value == null || !total ? '' : value > 0 && value / total < .005 ? '<1%' : value < total && value / total >= .995 ? '>99%' : Math.round(value / total * 100) + '%';
 function treeTable(prefix, roots, {a, b, first, second, average}, showHead = true) {
-  const rows = [];
+  const rows = [], showAvg = a !== 'all';   // no countywide average when the primary is already all courts
   const walk = (node, depth, parent) => {
     const id = node.id && prefix + ':' + node.id, isGroup = !!node.children;
     const open = isGroup && (node.fixed || expanded.has(id));
-    const v1 = nodeValue(node, first), v2 = b ? nodeValue(node, second) : null, v3 = average(node);
-    const p1 = parent ? share(v1, nodeValue(parent, first)) : '', p2 = parent && b ? share(v2, nodeValue(parent, second)) : '', p3 = parent ? share(v3, average(parent)) : '';
+    const v1 = nodeValue(node, first), v2 = b ? nodeValue(node, second) : null, v3 = showAvg ? average(node) : null;
+    const p1 = parent ? share(v1, nodeValue(parent, first)) : '', p2 = parent && b ? share(v2, nodeValue(parent, second)) : '', p3 = parent && showAvg ? share(v3, average(parent)) : '';
     const indent = 'padding-left:' + (depth * 22) + 'px';
     const label = (isGroup && !node.fixed ? '<button type="button" class="twisty" data-node="' + id + '" aria-expanded="' + open + '" aria-label="' + (open ? 'Collapse ' : 'Expand ') + esc(node.name) + '"></button>' : '<span class="leaf-pad"></span>') + esc(node.name);
     const cls = [depth === 0 && (node.root || node.col === 15) ? 'root' : '', isGroup ? 'group' : ''].filter(Boolean).join(' ');
     const num = v => node.noTotal ? '' : number(v);
     rows.push('<tr' + (cls ? ' class="' + cls + '"' : '') + '><th scope="row" style="' + indent + '">' + label + '</th><td>' + num(v1) + '</td><td class="pct">' + p1 + '</td>'
       + (b ? '<td>' + num(v2) + '</td><td class="pct">' + p2 + '</td>' : '')
-      + '<td class="avg">' + (node.noTotal ? '' : formatAverage(v3)) + '</td><td class="pct">' + p3 + '</td></tr>');
+      + (showAvg ? '<td class="avg">' + (node.noTotal ? '' : formatAverage(v3)) + '</td><td class="pct">' + p3 + '</td>' : '') + '</tr>');
     if (open) node.children.forEach(child => walk(child, depth + 1, node.noTotal ? null : node));
   };
   roots.forEach(root => walk(root, 0, null));
   const headName = court => esc(labelCourt(court)).replace(/ (\d)/g, '&nbsp;$1');   // wrap only after the comma
   const head = '<tr><th scope="col">Measure</th><th scope="col" class="court" colspan="2">' + headName(a) + '</th>'
-    + (b ? '<th scope="col" class="court" colspan="2">' + headName(b) + '</th>' : '') + '<th scope="col" class="avg" colspan="2">Countywide average</th></tr>';
-  const cols = '<colgroup><col><col class="c-val"><col class="c-pct">' + (b ? '<col class="c-val"><col class="c-pct">' : '') + '<col class="c-avg"><col class="c-pct"></colgroup>';
+    + (b ? '<th scope="col" class="court" colspan="2">' + headName(b) + '</th>' : '') + (showAvg ? '<th scope="col" class="avg" colspan="2">Countywide average</th>' : '') + '</tr>';
+  const cols = '<colgroup><col><col class="c-val"><col class="c-pct">' + (b ? '<col class="c-val"><col class="c-pct">' : '') + (showAvg ? '<col class="c-avg"><col class="c-pct">' : '') + '</colgroup>';
   return '<table class="tree">' + cols + (showHead ? '<thead>' + head + '</thead>' : '') + '<tbody>' + rows.join('') + '</tbody></table>';
 }
 const formatAverage = v => v == null ? '—' : v.toLocaleString('en-US', {maximumFractionDigits: Math.abs(v) < 100 ? 1 : 0});
